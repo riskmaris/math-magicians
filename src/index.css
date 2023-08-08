@@ -1,27 +1,62 @@
 body {
-  margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+.input-filed {
+  background-color: gray;
+  color: blanchedalmond;
+  padding: 1rem;
+  text-align: right;
+  font-size: 25px;
+}
+
+.last-btn {
+  width: 50%;
+  padding: 20px;
+  border-right: 2px solid #d1cfcf;
+  border-bottom: 2px solid #d1cfcf;
+}
+
+.calulator-container {
+  width: 500px;
+  margin: 5rem 5rem;
+}
+
+.other-operations {
+  padding: 20px;
+  border-right: 2px solid #d1cfcf;
+  border-bottom: 2px solid #d1cfcf;
+  width: 25%;
+}
+
+.btn {
+  color: var(--buttons-font-color);
+  font-size: 2rem;
+}
+
+.Digits-container {
+  font-size: 1rem;
+  width: 100%;
+  display: flex;
+  background-color: var(--buttons-gray);
+}
+
+.digits-btn {
+  padding: 20px;
+  border-right: 2px solid #d1cfcf;
+  border-bottom: 2px solid #d1cfcf;
+  width: 25%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.operator {
+  width: 25%;
+  background-color: #faa764;
 }
