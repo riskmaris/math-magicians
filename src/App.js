@@ -28,7 +28,6 @@
 
 // export default App;
 
-
 import React from 'react';
 import './index.css';
 import Calculator from './components/calculator';
@@ -40,13 +39,13 @@ import Calculator from './components/calculator';
 //   }
 
 //   render() {
-  function App() {
-    return (
-      <div>
-        <Calculator />
-      </div>
+function App() {
+  return (
+    <div>
+      <Calculator />
+    </div>
 
-    );
-  }
-    
+  );
+}
+
 export default App;
