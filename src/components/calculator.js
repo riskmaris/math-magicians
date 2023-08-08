@@ -1,13 +1,10 @@
 import React from 'react';
+import Result from './result';
 
 function Calculator() {
   return (
     <div className="calulator-container">
-      <div>
-        <div className="input-filed">
-          0
-        </div>
-      </div>
+      <Result />
       <div className="wrapper-operation">
         <div>
           <button type="button" className="other-operations btn">AC</button>
