@@ -18,10 +18,10 @@ function DogQuotes() {
         setQuote(data[0]?.quote || 'No quotes available.');
         setLoading(false);
       })
-      // .catch((err) => {
-      //   setError('An error occurred while fetching quotes.');
-      //   setLoading(false);
-      // });
+      .catch(() => {
+        setError('An error occurred while fetching quotes.');
+        setLoading(false);
+      });
   }, []);
 
   if (loading) {
