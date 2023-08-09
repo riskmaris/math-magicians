@@ -3,15 +3,19 @@ import Result from './result';
 import calculate from '../logic/calculate';
 
 function Calculator() {
-  const [state, setState] = useState({ total: 0 });
+  const [state, setState] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
   const btnClickHandler = (e) => {
-    const math = calculate(state, e.target.innerHTML);
-    setState(math);
+    const updateState = calculate(state, e.target.textContent);
+    setState(updateState);
   };
 
   return (
     <div className="calulator-container">
-      <Result />
+      <Result answer={state} />
       <div className="wrapper-operation">
         <div>
           <button onClick={btnClickHandler} type="button" className="other-operations btn">AC</button>
@@ -24,7 +28,7 @@ function Calculator() {
           <button onClick={btnClickHandler} type="button" className="digits-btn btn">7</button>
           <button onClick={btnClickHandler} type="button" className="digits-btn btn">8</button>
           <button onClick={btnClickHandler} type="button" className="digits-btn btn">9</button>
-          <button onClick={btnClickHandler} type="button" className="digits-btn  operator">X</button>
+          <button onClick={btnClickHandler} type="button" className="digits-btn  operator">x</button>
         </div>
         <div className="Digits-container">
           <button onClick={btnClickHandler} type="button" className="digits-btn btn">4</button>

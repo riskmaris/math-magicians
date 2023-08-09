@@ -1,11 +1,12 @@
-function result() {
+function result({ answer }) {
   return (
     <div>
       <div className="input-filed">
-        {State.total}
-        {State.operation}
-        {State.next}
-        0
+        {answer.total}
+        {' '}
+        {answer.operation}
+        {' '}
+        {answer.next}
       </div>
     </div>
   );
