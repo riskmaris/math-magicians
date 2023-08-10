@@ -1,21 +1,24 @@
 import React, { useState, useEffect } from 'react';
 
-function DogQuotes() {
+function DatingQuotes() {
   const [quote, setQuote] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Fetch data from the API
-    fetch('https://api.api-ninjas.com/v1/quotes?category=dogs', {
+    setLoading(true);
+
+    fetch('https://api.api-ninjas.com/v1/quotes?category=dating',{
+      method: "GET",
       headers: {
-        'X-Api-Key': '0oWa33wHCcpfBcURu9UPv39A2rSCT1DcyejUtSf7',
+        "x-api-key": "uun4kZMSyOheUFz1VsMXDA==t2AoG7fFgC4LDZXc",
       },
     })
+    
       .then((response) => response.json())
       .then((data) => {
-        // Set the quote from the response
-        setQuote(data[0]?.quote || 'No quotes available.');
+        console.log(data[0].quote);
+        setQuote(data[0]?.quote || "Dating is every man's dream.");
         setLoading(false);
       })
       .catch(() => {
@@ -34,10 +37,11 @@ function DogQuotes() {
 
   return (
     <div>
-      <h2>Random Dog Quote:</h2>
+      <h2>Random Date Quote:</h2>
       <p>{quote}</p>
     </div>
   );
 }
 
-export default DogQuotes;
+export default DatingQuotes;
+

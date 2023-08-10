@@ -1,13 +1,13 @@
 import React from 'react';
 import './index.css';
 import Calculator from './components/calculator';
-import DogQuotes from './components/DogQuotes';
+import DatingQuotes from './components/DatingQuotes';
 
 function App() {
   return (
     <div>
       <Calculator />
-      <DogQuotes />
+      <DatingQuotes />
     </div>
 
   );
