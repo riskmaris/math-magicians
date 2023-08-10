@@ -8,16 +8,15 @@ function DatingQuotes() {
   useEffect(() => {
     setLoading(true);
 
-    fetch('https://api.api-ninjas.com/v1/quotes?category=dating',{
-      method: "GET",
+    fetch('https://api.api-ninjas.com/v1/quotes?category=dating', {
+      method: 'GET',
       headers: {
-        "x-api-key": "uun4kZMSyOheUFz1VsMXDA==t2AoG7fFgC4LDZXc",
+        'x-api-key': 'uun4kZMSyOheUFz1VsMXDA==t2AoG7fFgC4LDZXc',
       },
     })
-    
+
       .then((response) => response.json())
       .then((data) => {
-        console.log(data[0].quote);
         setQuote(data[0]?.quote || "Dating is every man's dream.");
         setLoading(false);
       })
@@ -44,4 +43,3 @@ function DatingQuotes() {
 }
 
 export default DatingQuotes;
-
