@@ -5,6 +5,12 @@ body {
   text-align: center;
 }
 
+.header {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+}
+
 .input-filed {
   background-color: gray;
   color: blanchedalmond;
