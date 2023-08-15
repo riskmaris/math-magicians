@@ -1,14 +1,22 @@
 body {
+  background-color: black;
   margin: 5rem;
-  display: flex;
   justify-content: center;
-  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+h2 {
+  font-size: 25px;
+  padding-left: 10px;
 }
 
 .header {
+  width: 80%;
   display: flex;
   justify-content: flex-start;
   margin: 20px;
+  color: blanchedalmond;
 }
 
 .input-filed {
@@ -26,9 +34,8 @@ body {
   border-bottom: 2px solid #d1cfcf;
 }
 
-.calulator-container {
-  width: 500px;
-  margin: 5rem 5rem;
+.calculator-container {
+  width: 100%;
 }
 
 .other-operations {

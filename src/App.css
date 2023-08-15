@@ -1,34 +1,48 @@
 nav {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
   background-color: #faa764;
-  color: black;
+  color: black; 
 }
 
 .nav-link {
-  width: 50%;
+  width:30%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
 }
 
+.nav-link a {
+  color: black;
+}
+
+.home {
+  width:60%;
+}
+
 .home-title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: left;
+  font-size: 25px;
+  color: blanchedalmond;
 }
 
 .paragraph {
+  width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
   text-align: left;
+  color: blanchedalmond;
+  font-weight: 600;
 }
 
 .quote {
   text-align: left;
-  color: black;
+  color: blanchedalmond;
   font-weight: 600;
   font-size: 17px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
