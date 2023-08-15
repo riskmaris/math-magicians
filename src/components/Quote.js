@@ -7,8 +7,11 @@ function Quote() {
       <h1>Math Magician</h1>
       <p className="quote">
         Mathmatics is not about numbers ,equations computation, or algorithm
-        its about understanding.<br></br>
-        <br></br> - William paul Thurston
+        its about understanding.
+        <br />
+        <br />
+        {' '}
+        - William paul Thurston
       </p>
     </div>
 

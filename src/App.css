@@ -5,11 +5,11 @@ nav {
   align-items: center;
   min-height: 10vh;
   background-color: #faa764;
-  color: black; 
+  color: black;
 }
 
 .nav-link {
-  width:30%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -21,7 +21,7 @@ nav {
 }
 
 .home {
-  width:60%;
+  width: 60%;
 }
 
 .home-title {
