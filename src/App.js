@@ -6,10 +6,11 @@ import {
 } from 'react-router-dom';
 import Home from './components/Home';
 import Nav from './components/Nav';
-import Quote from './components/Quote';
+// import Quote from './components/DatingQuotes';
 import './index.css';
 import './App.css';
 import Calculator from './components/calculator';
+import DatingQuotes from './components/DatingQuotes';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/calculator" element={<Calculator />} />
-          <Route path="/quote" element={<Quote />} />
+          <Route path="/quote" element={<DatingQuotes />} />
         </Routes>
       </Router>
     </div>

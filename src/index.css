@@ -15,7 +15,7 @@ h2 {
   width: 80%;
   display: flex;
   justify-content: flex-start;
-  margin: 20px;
+  margin-top: 70px;
   color: blanchedalmond;
 }
 
@@ -35,7 +35,8 @@ h2 {
 }
 
 .calculator-container {
-  width: 100%;
+  width: 40%;
+  margin-left: 60%;
 }
 
 .other-operations {
