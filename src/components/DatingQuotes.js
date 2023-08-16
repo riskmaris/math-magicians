@@ -17,7 +17,6 @@ function DatingQuotes() {
 
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setQuote(data[0]?.quote || "Dating is every man's dream.");
         setLoading(false);
       })
@@ -28,17 +27,17 @@ function DatingQuotes() {
   }, []);
 
   if (loading) {
-    return <p className='quote'>Loading...</p>;
+    return <p className="quote">Loading...</p>;
   }
 
   if (error) {
-    return <p className='quote'>{error}</p>;
+    return <p className="quote">{error}</p>;
   }
 
   return (
     <div>
-      <h2 className='random'>Random Date Quote:</h2>
-      {!loading && !error && <p className='quote'>{quote}</p>}
+      <h2 className="random">Random Date Quote:</h2>
+      {!loading && !error && <p className="quote">{quote}</p>}
     </div>
   );
 }
