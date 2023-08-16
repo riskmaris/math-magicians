@@ -28,17 +28,17 @@ function DatingQuotes() {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <p className='quote'>Loading...</p>;
   }
 
   if (error) {
-    return <p>{error}</p>;
+    return <p className='quote'>{error}</p>;
   }
 
   return (
     <div>
-      <h2>Random Date Quote:</h2>
-      <p>{quote}</p>
+      <h2 className='random'>Random Date Quote:</h2>
+      {!loading && !error && <p className='quote'>{quote}</p>}
     </div>
   );
 }
