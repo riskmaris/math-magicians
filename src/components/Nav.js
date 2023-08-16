@@ -16,7 +16,7 @@ function Nav() {
     {
       id: 3,
       path: '/quote',
-      text: 'Quote',
+      text: 'DatingQuotes',
     },
   ];
 

@@ -17,6 +17,7 @@ function DatingQuotes() {
 
       .then((response) => response.json())
       .then((data) => {
+        console.log(data);
         setQuote(data[0]?.quote || "Dating is every man's dream.");
         setLoading(false);
       })

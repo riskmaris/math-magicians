@@ -6,7 +6,6 @@ import {
 } from 'react-router-dom';
 import Home from './components/Home';
 import Nav from './components/Nav';
-// import Quote from './components/DatingQuotes';
 import './index.css';
 import './App.css';
 import Calculator from './components/calculator';
